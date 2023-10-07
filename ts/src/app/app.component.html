@@ -22,9 +22,9 @@
   <p>Edição Atual</p>
 </div>
 
-<header>
+<header class="header">
   <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-  <h3>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
+  <h3 class="title">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
   <p>ISSN: 1234-5678</p>
   <div>
     <p>PT, BR</p>
@@ -35,30 +35,104 @@
   </div>
 </header>
 
-    <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP'</h2>
-
-    <h3>O elemento de expandir resumo precisa ter a classe .btn-show-more</h3>
-    <a href="#" class="btn-show-more">ver mais</a>
-
-    <h3>O elemento de criar tópico precisa ter a classe .btn-create-topic</h3>
-    <a href="#" class="btn-create-topic">criar tópico</a>
-
-    <h3>O card que contém um tópico respondido precisa ter a classe .answered-topic, o assunto do tópico deve ter a classe .ops-topic-subject</h3>
-    <div class="answered-topic">
-      <h4 class="ops-topic-subject">Título do tópico</h4>
+<main class="main">
+  <div class="container">
+    <h2 class="main-title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP'</h2>
+    <img src="../assets/dewey1.png" alt="imagem video praia">
+    <div class="info">
+      <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
+      <img src="../assets/image-profile.png" alt="imagem de um homem idoso">
+      <h2>Beatriz Christiane Melo</h2>
+      <p>FCA / Universidade Estadual de Campinas</p>
     </div>
-    <div class="comments-container">
-      Os comentários de um tópico devem estar encapsulados num elemento com a classe .comments-container
+  </div>
+
+  <div class="info">
+    <button class="download-button"><i class="fa-solid fa-download"></i>Download</button>
+    <button class="favorite-button"><i class="fa-solid fa-star"></i></button>
+    <button class="doy-button"><img src="../assets/doi.png" alt="doi-image"></button>
+    
+    <p>COMO CITAR ESSE TRABALHO?</p>
+  </div>
+  <h3>Detalhes</h3>
+  <div>
+    <p>Tipo de Apresentação: Pôster</p>
+    <p>Eixo temático: Alimentação e saúde (AS)</p>
+    <p>Palavras-chaves: Alimentos funcionais, alimentação escolar.</p>
+    
+    <p>Autores:
+    Galileo Galilei¹
+    Berta Lange de Morretes²
+    Isaac Newton³
+    Cesar Lattes¹
+    Stephen Hawking⁴</p>
+    
+    <p>¹Universidade Estadual de Campinas
+    ²Universidade de São Paulo
+    ³Instituto Nacional de Pesquisas Espaciais
+    ⁴Universidade Federal do Rio de Janeiro</p>
     </div>
+    
+    <h2 class="summary">Resumo</h2>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, 
+      mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis
+      quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel
+      aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  
+      Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. 
+      Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus 
+      condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque 
+      sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam 
+      dictum nisl, vel aliquet enim accumsan sit ametl accumsant... <a href="#" class="btn-show-more">ver mais</a></p>
 
-    <form>
-      Assunto:
-      <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
-      Conteúdo:
-      <!-- <input> -->
-      <button>Enviar</button>
-    </form>
+      <section>
+        <h2>Discussões</h2>
 
-    <h3>Após submeter o formulário, a seguinte mensagem deve ser exibida: Aguardando feedback dos autores</h3>
+        <p>Compartilhe suas ideias ou dúvidas com os autores!</p>
+
+        <div class="icon-container">
+          <img src="../assets/icone1.png" alt="icon 1">
+          <img src="../assets/icone2.png" alt="icon 2">
+          <img src="../assets/icone3.png" alt="icon 3">
+        </div>
+        
+        <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+
+        <button href="#" class="btn-create-topic"><img src="../assets/icon-criar.png" alt="icon sinal de mais">criar tópico</button>
+      </section>
+
+      <form>
+        Assunto:
+        <input class="subject" placeholder="Defina um tópico sucinto para notificar os autores...">
+        Conteúdo:
+        <button>Enviar</button>
+      </form>
+
+      <div class="answered-topic">
+        <h4 class="ops-topic-subject">Título do tópico</h4>
+      </div>
+
+      <h3>Após submeter o formulário, a seguinte mensagem deve ser exibida: Aguardando feedback dos autores</h3>
+
+      <div class="card-info">
+        <h4>Assunto da pergunta aparece aqui</h4>
+        <p class="nome">Carlos Henrique Santos</p>
+        <p class="text">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+        <img src="../assets/mais-informacoes.png" alt="image of 3 dots">
+        <button><i class="fa-solid fa-heart"></i></button> <a>1 like</a> <a>1 resposta</a>
+      </div>
+
+      <div class="card-info">
+        <h4>Assunto da pergunta aparece aqui</h4>
+        <p class="nome">Carlos Henrique Santos</p>
+        <p class="text">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+        <img src="../assets/mais-informacoes.png" alt="image of 3 dots">
+        <button><i class="fa-solid fa-heart"></i></button> <a>4 likes</a>  <a>4 respostas</a>
+      </div>
+
+      <div class="comments-container">
+        Os comentários de um tópico devem estar encapsulados num elemento com a classe .comments-container
+      </div>
+</main>
+
 
 
