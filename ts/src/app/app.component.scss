@@ -3,6 +3,9 @@
 $background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
 $white: #FFF;
 $orange: #ED7839;
+$bege-claro: #FDF1EB;
+$marrom-avermelhado: #725C5C;
+$danger: #F85959;
 
 
 body {
@@ -49,7 +52,7 @@ body {
     }
 
     .selected {
-      background: #FDF1EB;
+      background: $bege-claro;
       width: 100%;
     }
   }
@@ -61,7 +64,7 @@ body {
     flex-shrink: 0;
 
     p {
-      color: #725C5C;
+      color: $marrom-avermelhado;
       font-family: Quicksand;
       font-size: 15px;
       font-style: normal;
@@ -69,6 +72,102 @@ body {
       line-height: normal;
       padding-block: 7px;
       padding-left: 29px;
+    }
+  }
+}
+
+// header
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $bege-claro;
+  padding: 0 36px;
+
+  .small-title {
+    color: $marrom-avermelhado;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .title {
+    color: #725C5C;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  button {
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    background: transparent;
+  }
+
+  .profile-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  .welcome-text {
+    color: #333;
+    text-align: right;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .address {
+    color: #333;
+    text-align: right;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .image-profile {
+    position: relative;
+
+    img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    p {
+      color: #FFF;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.2px;
+      position: absolute;
+      background-color: $danger;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      z-index: 1;
+      right: -2px;
+      top: -2px;
     }
   }
 }
