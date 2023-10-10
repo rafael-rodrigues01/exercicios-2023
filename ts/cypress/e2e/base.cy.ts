@@ -1,6 +1,6 @@
 describe('checa elementos básicos', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:4200/');
+    cy.visit('http://localhost:4200/internal/jobs');
   });
 
   it('titulo do trabalho existe', () => {
