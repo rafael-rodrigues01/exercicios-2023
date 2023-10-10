@@ -10,6 +10,7 @@ $danger: #F85959;
 
 body {
   display: flex;
+  background-color: $white;
 }
 
 //aside
@@ -172,4 +173,97 @@ body {
   }
 }
 
+// main
 
+.main {
+  padding: 0 36px;
+
+  .main-container {
+    display: flex;
+
+    .container {
+      position: relative;
+  
+  
+      .main-title {
+        width: 786px;
+        height: 54px;
+        flex-shrink: 0;
+        color: $orange;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 25px;
+        letter-spacing: 1px;
+      }
+  
+      .beach-image-video {
+        width: 783px;
+        height: 439px;
+        flex-shrink: 0;
+        background-image: #754f3a80;
+      }
+  
+        .image-title {
+          position: absolute;
+          z-index: 1;
+          top: 100px;
+          left: 32px;
+          width: 734px;
+          height: 54px;
+          flex-shrink: 0;
+          color: #FFF;
+          font-family: Roboto;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 25px;
+          letter-spacing: 1.2px;
+        }
+  
+        .profile-container {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          z-index: 1;
+          bottom: 65px;
+          left: 50px;
+  
+          img {
+            height: 84px;
+            width: 84px;
+            border-radius: 50%;
+            border: 1px solid $orange;
+            margin-right: 25px;
+          }
+  
+          .name {
+            width: 452px;
+            height: 36px;
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 25px; 
+            letter-spacing: 1.7px;
+          }
+  
+          p {
+            width: 417px;
+            height: 27px;
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 25px; 
+            letter-spacing: 1px;
+          }
+        }
+    }
+  }
+}
