@@ -1,65 +1,70 @@
-<header class="header">
-    <section>
-      <p class="small-title">
-        Anais do Simpósio Latino Americano de Ciências de Alimentos
-      </p>
-      <h3 class="title">
-        Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
-      </h3>
-      <p>ISSN: 1234-5678</p>
-    </section>
-    <button>
-      <img src="../assets/language-image.png" alt="language-image" />PT, BR<img
-      src="../assets/dropdown.png"
-      alt="dropdown image"
-      />
-    </button>
-    <div class="profile-container">
-      <div>
-        <p class="welcome-text">Bem vindo!</p>
-        <p class="address">alguem12@galoascience.com</p>
-      </div>
-      <div class="image-profile">
-        <img src="../assets/image.png" alt="imagem de perfil de uma mulher" />
-        <p>2</p>
-      </div>
+
+<div class="container">
+  <aside class="side-bar">
+    <h1>SLACA 2019</h1>
+    <img src="../assets/logo.png" alt="logo laranja" />
+    <div>
+      <p>Apresentação</p>
     </div>
-  </header>
+    <div>
+      <p>Comitês</p>
+    </div>
+    <div>
+      <p>Autores</p>
+    </div>
+    <div>
+      <p>Eixos temáticos</p>
+    </div>
+    <div class="wrapper-rectangle">
+      <div class="rectangle"></div>
+      <p class="selected">Trabalhos</p>
+    </div>
+    <div>
+      <p>Contato</p>
+    </div>
+    <div>
+      <p>Edições anteriores</p>
+    </div>
+    <div>
+      <p>Edição Atual</p>
+    </div>
+  </aside>
+  
+  <div class="content">
+    <header class="header">
+      <section>
+        <p class="small-title">
+          Anais do Simpósio Latino Americano de Ciências de Alimentos
+        </p>
+        <h3 class="title">
+          Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
+        </h3>
+        <p>ISSN: 1234-5678</p>
+      </section>
+      <button>
+        <img src="../assets/language-image.png" alt="language-image" />PT, BR<img
+        src="../assets/dropdown.png"
+        alt="dropdown image"
+        />
+      </button>
+      <div class="profile-container">
+        <div>
+          <p class="welcome-text">Bem vindo!</p>
+          <p class="address">alguem12@galoascience.com</p>
+        </div>
+        <div class="image-profile">
+          <img src="../assets/image.png" alt="imagem de perfil de uma mulher" />
+          <p>2</p>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <router-outlet></router-outlet>
+    </div>
+    
+    <footer><img src="../assets/imagem-footer.png" alt="Galoa" /></footer>
+  </div>
 
-<aside class="side-bar">
-  <h1>SLACA 2019</h1>
-  <img src="../assets/logo.png" alt="logo laranja" />
-  <div>
-    <p>Apresentação</p>
-  </div>
-  <div>
-    <p>Comitês</p>
-  </div>
-  <div>
-    <p>Autores</p>
-  </div>
-  <div>
-    <p>Eixos temáticos</p>
-  </div>
-  <div class="wrapper-rectangle">
-    <div class="rectangle"></div>
-    <p class="selected">Trabalhos</p>
-  </div>
-  <div>
-    <p>Contato</p>
-  </div>
-  <div>
-    <p>Edições anteriores</p>
-  </div>
-  <div>
-    <p>Edição Atual</p>
-  </div>
-</aside>
-
-<div class="main">
-  <router-outlet></router-outlet>
 </div>
 
-
-  <footer><img src="../assets/imagem-footer.png" alt="Galoa" /></footer>
 
