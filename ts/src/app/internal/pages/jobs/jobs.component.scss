@@ -6,9 +6,11 @@
 
   .main-container {
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
 
     .container {
-      position: relative;
+      width: 100%;
   
   
       .main-title {
@@ -25,75 +27,13 @@
       }
   
       .beach-image-video {
-        width: 783px;
-        height: 439px;
+        width: 100%;
+        height: auto;
         flex-shrink: 0;
-        background-image: #754f3a80;
       }
-  
-        .image-title {
-          position: absolute;
-          z-index: 1;
-          top: 100px;
-          left: 32px;
-          width: 734px;
-          height: 54px;
-          flex-shrink: 0;
-          color: #FFF;
-          font-family: Roboto;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 25px;
-          letter-spacing: 1.2px;
-        }
-  
-        .profile-container {
-          display: flex;
-          align-items: center;
-          position: absolute;
-          z-index: 1;
-          bottom: 65px;
-          left: 50px;
-  
-          img {
-            height: 84px;
-            width: 84px;
-            border-radius: 50%;
-            border: 1px solid $orange;
-            margin-right: 25px;
-          }
-  
-          .name {
-            width: 452px;
-            height: 36px;
-            flex-shrink: 0;
-            color: #FFF;
-            font-family: Roboto;
-            font-size: 34px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 25px; 
-            letter-spacing: 1.7px;
-          }
-  
-          p {
-            width: 417px;
-            height: 27px;
-            flex-shrink: 0;
-            color: #FFF;
-            font-family: Roboto;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 900;
-            line-height: 25px; 
-            letter-spacing: 1px;
-          }
-        }
     }
 
     .info {
-      width: 100%;
 
       .buttons-container {
         display: flex;
@@ -140,6 +80,8 @@
           background: $orange;
         }
       }
+
+
       h3 {
         color: #ED7839;
         text-align: right;
@@ -151,12 +93,13 @@
         letter-spacing: 0.7px;
       }
 
+
       .detail {
-        padding-right: 5px;
+        margin: 15px;
         overflow-y: scroll;
         &::-webkit-scrollbar {
           width: 10px;
-          margin-right: 10px;
+          margin-left: 10px;
         }
         
         /* Track */
@@ -177,10 +120,6 @@
         }
 
 
-        align-items: center;
-        height: 45px;
-        border-radius: 3px 3px 0px 0px;
-        width: 312px;
         height: 439px;
         flex-shrink: 0;
         border-radius: 3px;
