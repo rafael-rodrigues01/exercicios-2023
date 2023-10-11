@@ -1,4 +1,4 @@
-@import '../../../../styles.scss';
+@import "../../../../styles.scss";
 
 .main {
   border: 3px solid rgb(47, 68, 255);
@@ -11,8 +11,7 @@
 
     .container {
       width: 100%;
-  
-  
+
       .main-title {
         width: 786px;
         height: 54px;
@@ -25,7 +24,7 @@
         line-height: 25px;
         letter-spacing: 1px;
       }
-  
+
       .beach-image-video {
         width: 100%;
         height: auto;
@@ -34,7 +33,6 @@
     }
 
     .info {
-
       .buttons-container {
         display: flex;
         justify-content: end;
@@ -58,16 +56,16 @@
           gap: 5px;
           flex-shrink: 0;
           border-radius: 4px;
-          border: 1px solid rgba(0, 0, 0, 0.00);
+          border: 1px solid rgba(0, 0, 0, 0);
           background: $orange;
         }
-  
+
         .favorite-button {
           width: 43px;
           height: 31px;
           padding: 6px 12px;
           border-radius: 4px;
-          border: 1px solid rgba(0, 0, 0, 0.00);
+          border: 1px solid rgba(0, 0, 0, 0);
           background: $orange;
         }
 
@@ -76,14 +74,13 @@
           height: 31px;
           padding: 6px 12px;
           border-radius: 4px;
-          border: 1px solid rgba(0, 0, 0, 0.00);
+          border: 1px solid rgba(0, 0, 0, 0);
           background: $orange;
         }
       }
 
-
       h3 {
-        color: #ED7839;
+        color: #ed7839;
         text-align: right;
         font-family: Roboto;
         font-size: 14px;
@@ -93,24 +90,23 @@
         letter-spacing: 0.7px;
       }
 
-
       .detail {
         height: 439px;
         flex-shrink: 0;
         border-radius: 3px;
-        border: 1px solid #ECECEC;
+        border: 1px solid #ececec;
 
         h4 {
           width: 100%;
-          color: #4E4E4E;
+          color: #4e4e4e;
           font-family: Roboto;
           font-size: 20px;
           font-style: normal;
           font-weight: 500;
-          line-height: 25px; 
+          line-height: 25px;
           margin-bottom: 15px;
           padding: 10px 15px;
-          background: #FDF1EB;
+          background: #fdf1eb;
         }
 
         .box {
@@ -121,26 +117,25 @@
             width: 11px;
           }
 
-          &::-webkit-scrollbar-track { 
+          &::-webkit-scrollbar-track {
             width: 10px;
             border-radius: 10px;
           }
-          
+
           &::-webkit-scrollbar-thumb {
             border: 3px solid rgba(0, 0, 0, 0);
             background-clip: padding-box;
             border-radius: 9999px;
-            background-color: #AAAAAA;
+            background-color: #aaaaaa;
           }
         }
 
         .text-container {
           width: 227px;
-          
         }
 
         .poster {
-          color: #5C5C5C;
+          color: #5c5c5c;
           font-family: Quicksand;
           font-size: 12px;
           font-style: normal;
@@ -152,7 +147,7 @@
         }
 
         .authors {
-          color: #5C5C5C;
+          color: #5c5c5c;
           font-family: Quicksand;
           font-size: 14px;
           font-style: normal;
@@ -163,7 +158,7 @@
         }
 
         .names {
-          color: #5C5C5C;
+          color: #5c5c5c;
           font-family: Quicksand;
           font-size: 14px;
           font-style: normal;
@@ -176,7 +171,7 @@
         }
 
         .universities {
-          color: #ADA0A0;
+          color: #ada0a0;
           font-family: Quicksand;
           font-size: 12px;
           font-style: normal;
@@ -202,7 +197,7 @@
       flex-shrink: 0;
       border-radius: 3px 3px 0px 0px;
       border: 1px solid $light-gray;
-      background-color: #FDF1EB;
+      background-color: #fdf1eb;
 
       h2 {
         height: 100%;
@@ -212,21 +207,39 @@
       }
     }
 
+    h4 {
+      color: $orange;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 27px;
+      margin-top: 15px;
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
     .card-body {
       padding: 15px;
 
       p {
         align-self: stretch;
-        color: #5C5C5C;
+        color: #5c5c5c;
         font-family: Quicksand;
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 162.5%; 
+        line-height: 162.5%;
         letter-spacing: 0.28px;
 
         a {
-          color: #ED7839;
+          color: #ed7839;
           font-family: Quicksand;
           font-size: 14px;
           font-style: normal;
