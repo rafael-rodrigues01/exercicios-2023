@@ -188,4 +188,53 @@
       }
     }
   }
+
+  .card {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid $light-gray;
+    margin-top: 30px;
+
+    .card-header {
+      border: 3px solid green;
+      height: 45px;
+      flex-shrink: 0;
+      border-radius: 3px 3px 0px 0px;
+      border: 1px solid $light-gray;
+      background-color: #FDF1EB;
+
+      h2 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+      }
+    }
+
+    .card-body {
+      padding: 15px;
+
+      p {
+        align-self: stretch;
+        color: #5C5C5C;
+        font-family: Quicksand;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 162.5%; 
+        letter-spacing: 0.28px;
+
+        a {
+          color: #ED7839;
+          font-family: Quicksand;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 152.344%;
+          letter-spacing: 0.28px;
+        }
+      }
+    }
+  }
 }
