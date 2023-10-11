@@ -225,6 +225,47 @@
       gap: 50px;
     }
 
+    p {
+      margin-top:  35px;
+      color: #595959;
+      text-align: center;
+      font-family: Quicksand;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 137.5%; 
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .hr-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .btn-create-topic {
+        color: $white;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        background: $background;
+        width: 133px;
+        height: 32px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+        
+      }
+    }
+
     .card-body {
       padding: 15px;
 
