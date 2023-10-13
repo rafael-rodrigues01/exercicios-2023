@@ -295,6 +295,122 @@
       }
     }
 
+    .answered-topic {
+
+      a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        color: #F48F44;
+        font-family: Quicksand;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 137.5%;
+        text-decoration-line: underline;
+        margin-bottom: 54px;
+      }
+
+      button {
+        width: 235.145px;
+        height: 32px;
+        flex-shrink: 0;
+        background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+        border: none;
+        color: #FFF;
+        text-align: center;
+        font-family: Quicksand;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        border-radius: 3px;
+      }
+    }
+
+    .card-info {
+      width: 1028px;
+      height: 148px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      border: 1px solid #E7E7E7;
+      background: $white;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+      margin: 17px;
+      padding: 17px 24px;
+
+      .question-title {
+        height: 20px;
+        color: #ED7839;
+        font-family: Quicksand;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: start;
+        margin: 0;
+      }
+
+      .nome {
+        width: 542.071px;
+        height: 15px;
+        color: #5C5C5C;
+        font-family: Quicksand;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: start;
+      }
+
+      .text {
+        height: 35px;
+        flex-shrink: 0;
+        color: #4D4D4D;
+        font-family: Quicksand;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+        text-align: start;
+      }
+
+      .box {
+        margin-top: 12px;
+        display: flex;
+        gap: 15px;
+      }
+
+      button {
+        width: 27px;
+        height: 19px;
+        background-color: $orange;
+        border: none;
+        border-radius: 2px;
+        color: #FFF;
+        font-family: Material Icons;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 3px;
+        margin-left: 15px;
+      }
+
+      a {
+        height: 19px;
+        color: #757575;
+        font-family: Segoe UI;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 350;
+        line-height: normal;
+      }
+    }
+
     h4 {
       color: $orange;
       text-align: center;
@@ -368,7 +484,7 @@
         letter-spacing: 0.28px;
 
         a {
-          color: #ed7839;
+          color: $orange;
           font-family: Quicksand;
           font-size: 14px;
           font-style: normal;
