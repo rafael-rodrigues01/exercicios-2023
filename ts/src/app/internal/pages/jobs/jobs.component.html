@@ -72,12 +72,21 @@
         gravida eros vestibulum Phasellus condimentum orci id leo condimentum
         lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in
         sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum
-        nisl, vel aliquet enim accumsan sit ametl accumsant...<a
-          href="#"
-          class="btn-show-more"
-          >ver mais</a
-        >
       </p>
+      <p *ngIf="showContent">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis perspiciatis vero 
+          tempore necessitatibus assumenda. Quidem ea quisquam molestias. Distinctio officia eum 
+          facilis repellendus expedita hic velit similique pariatur sunt at! Lorem ipsum dolor sit 
+          amet consectetur adipisicing elit. Expedita libero quam unde repellendus eaque vero tenetur
+          enim pariatur excepturi. Officiis tempore blanditiis recusandae architecto, dolorem est aspernatur!
+          Laudantium, laboriosam distinctio.
+      </p>
+      <a
+        (click)="showMoreContent($event)"
+        href="#"
+        class="btn-show-more"
+        >{{ linkText }}</a
+      >
     </div>
   </div>
 
