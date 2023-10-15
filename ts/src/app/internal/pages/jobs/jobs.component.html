@@ -76,7 +76,7 @@
       </p>
 
       <p *ngIf="showText">
-        <br><br>
+        <br /><br />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae
         turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris,
         egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna
@@ -150,6 +150,8 @@
       <form>
         Assunto:<br />
         <input
+          name="topicValeu"
+          [(ngModel)]="topicValue"
           class="subject"
           placeholder="Defina um tópico sucinto para notificar os autores..."
         />
@@ -157,7 +159,7 @@
         Conteúdo:
         <br />
 
-        <input class="input-content" />
+        <input name="contentValue" [(ngModel)]="contentValue" class="input-content" />
         <div (click)="showAnsweredTopic($event)" class="button-container">
           <button>Enviar</button>
         </div>
@@ -182,52 +184,9 @@
         <hr width="430" />
       </div>
     </div>
-    <h3>
-      Após submeter o formulário, a seguinte mensagem deve ser exibida:
-      Aguardando feedback dos autores
-    </h3>
 
-    <div class="card-info">
-      <h4 class="question-title">Assunto da pergunta aparece aqui</h4>
-      <p class="nome">Carlos Henrique Santos</p>
-      <p class="text">
-        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo
-        da análise da dimensão e impacto de processo formativo situado impacto
-        de processo formativo processo...
-      </p>
-      <div class="box">
-        <img src="../assets/mais-informacoes.png" alt="image of 3 dots" />
-        <button><i class="fa-solid fa-heart"></i></button> <a>1 like</a>
-        <a>1 resposta</a>
-      </div>
-    </div>
-
-    <div class="card-info">
-      <h4 class="question-title">Assunto da pergunta aparece aqui</h4>
-      <p class="nome">Carlos Henrique Santos</p>
-      <p class="text">
-        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo
-        da análise da dimensão e impacto de processo formativo situado impacto
-        de processo formativo processo...
-      </p>
-      <div class="box">
-        <img src="../assets/mais-informacoes.png" alt="image of 3 dots" />
-        <button><i class="fa-solid fa-heart"></i></button> <a>1 like</a>
-        <a>1 resposta</a>
-      </div>
-    </div>
-
-    <div class="comments-container">
-      <h6>Adriano da Silva</h6>
-      <h5>Autor</h5>
-      <i class="fa-solid fa-check-double"></i>
-      <p>
-        Resposta do autor é aqui. Relato inscreve-se no campo da análise da
-        dimensão e impacto de processo formativo situado impacto de processo
-        formativo processo resente relato inscreve-se no campo da análise da
-        dimensão e impacto de processo formativo situado impacto de processo
-        formativo processo.
-      </p>
-    </div>
+    <section class="topics">
+      <app-topic *ngFor="let topic of topics" [topic]="topic"></app-topic>
+    </section>
   </div>
 </main>
