@@ -71,8 +71,9 @@
         id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac
         gravida eros vestibulum Phasellus condimentum orci id leo condimentum
         lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in
-        sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum
-      </p>
+        sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum...
+      </p>  
+      
       <p *ngIf="showContent">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis perspiciatis vero 
           tempore necessitatibus assumenda. Quidem ea quisquam molestias. Distinctio officia eum 
@@ -95,7 +96,7 @@
       <h2>Discussões</h2>
     </div>
 
-    <div class="hidden">
+    <div [class.hidden]="showContent">
       <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
       <div class="icon-container">
         <img src="../assets/icone1.png" alt="icon 1" />
@@ -109,7 +110,7 @@
       <div class="hr-container">
         <hr width="450"/>
       
-        <button href="#" class="btn-create-topic">
+        <button (click)="toggleElement()" href="#" class="btn-create-topic">
           <img src="../assets/icon-criar.png" alt="icon sinal de mais" />criar
           tópico
         </button>
@@ -118,7 +119,7 @@
       </div>
     </div>
 
-    <div class="hidden form-container">
+    <div [class.visible]="showForm" [class.hidden]="!showForm"  class="hidden form-container">
       <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
       <form>
         Assunto:<br>
@@ -132,18 +133,18 @@
 
         <input class="input-content"
         >
-        <div class="button-container"><button>Enviar</button></div>
+        <div (click)="showAnsweredTopic($event)" class="button-container"><button>Enviar</button></div>
       </form>
     </div>
 
-    <div class="answered-topic">
+    <div [class.visible]="showTopic" [class.hidden]="!showTopic" class="hidden answered-topic">
       <h4 class="ops-topic-subject">Seu tópico foi enviado com sucesso! :D</h4>
       <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
       <a href="#">Descubra outros trabalhos!</a>
       <div class="hr-container">
         <hr width="430"/>
       
-        <button href="#">
+        <button (click)="showTopicInfo()" href="#">
             criar novo tópico
         </button>
         <hr width="430"/>
