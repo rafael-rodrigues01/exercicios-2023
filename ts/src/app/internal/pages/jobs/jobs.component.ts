@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TopicsService } from './services/topics.service';
+import { Topic } from './models/topic.model';
 
 @Component({
   selector: 'app-jobs',
@@ -11,11 +13,19 @@ export class JobsComponent implements OnInit {
   showForm: boolean = false;
   showTopic: boolean = false;
   linkText: string = 'ver mais';
-  valorDoInput: string = ''
+  valorDoInput: string = '';
+  topicValue: string = '';
+  contentValue: string = '';
+  topics: Topic[] = [];
 
-  constructor() {}
+  constructor(private topicsService: TopicsService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.topicsService.topics.subscribe((topics) => {
+      console.log(topics);
+      this.topics = topics;
+    });
+  }
 
   showMoreContent(event: Event): void {
     event.preventDefault();
@@ -31,21 +41,28 @@ export class JobsComponent implements OnInit {
     }
   }
 
-  toggleElement() :void {
+  toggleElement(): void {
     this.showForm = !this.showForm;
     this.showContent = !this.showContent;
-    
   }
 
-  showAnsweredTopic (event: Event): void {
+  showAnsweredTopic(event: Event): void {
     event.preventDefault();
 
     this.showForm = !this.showForm;
     this.showTopic = false;
     this.showTopic = !this.showTopic;
+
+    this.topicsService.addTopic({
+      topic: this.topicValue,
+      content: this.contentValue,
+      isNewTopic: true,
+    });
+
+    [this.topicValue, this.contentValue] = ['', ''];
   }
 
-  showTopicInfo():void {
+  showTopicInfo(): void {
     this.showForm = !this.showForm;
     this.showTopic = !this.showTopic;
   }
