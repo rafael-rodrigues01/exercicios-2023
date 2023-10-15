@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobsComponent implements OnInit {
   showContent: boolean = false;
+  showText: boolean = false;
   showForm: boolean = false;
   showTopic: boolean = false;
   linkText: string = 'ver mais';
@@ -19,14 +20,14 @@ export class JobsComponent implements OnInit {
   showMoreContent(event: Event): void {
     event.preventDefault();
 
-    const showContentIsTrue: boolean = !this.showContent;
+    const showTextIsTrue: boolean = !this.showText;
 
-    this.linkText = showContentIsTrue ? 'ver menos' : 'ver mais';
+    this.linkText = showTextIsTrue ? '' : 'ver mais';
 
-    if (!this.showContent) {
-      this.showContent = true;
+    if (!this.showText) {
+      this.showText = true;
     } else {
-      this.showContent = false;
+      this.showText = false;
     }
   }
 
