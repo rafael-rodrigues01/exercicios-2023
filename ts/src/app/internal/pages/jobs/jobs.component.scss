@@ -1,7 +1,6 @@
 @import "../../../../styles.scss";
 
 .main {
-  border: 3px solid rgb(47, 68, 255);
   padding: 0 36px;
 
   .main-container {
@@ -123,7 +122,6 @@
           }
 
           &::-webkit-scrollbar-thumb {
-            border: 3px solid rgba(0, 0, 0, 0);
             background-clip: padding-box;
             border-radius: 9999px;
             background-color: #aaaaaa;
@@ -192,7 +190,6 @@
     margin-top: 30px;
 
     .card-header {
-      border: 3px solid green;
       height: 45px;
       flex-shrink: 0;
       border-radius: 3px 3px 0px 0px;
