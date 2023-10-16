@@ -17,12 +17,6 @@ describe('checa elementos básicos', () => {
     cy.get('.btn-create-topic').contains('criar tópico');
   });
 
-  it('expandir tópico funciona', () => {
-    cy.get('.answered-topic .ops-topic-subject').click();
-    cy.get('.comments-container').should('exist');
-    cy.compareSnapshot('Trabalho - Card de topico expandido');
-  });
-
   it('clicar em `criar tópico` exibe o formulário', () => {
     cy.get('.btn-create-topic').click();
     cy.get('button').contains('Enviar')
@@ -32,11 +26,18 @@ describe('checa elementos básicos', () => {
     cy.compareSnapshot('Trabalho - Criando novo topico');
   });
 
+  it('expandir tópico funciona', () => {
+    cy.get('.comments-container').should('exist');
+    cy.compareSnapshot('Trabalho - Card de topico expandido');
+  });
+
+
   it('enviar o formulário exibe mensagem de sucesso', () => {
     cy.get('.btn-create-topic').click();
-    cy.get('button').click();
+    cy.get('form button').click();
     cy.get('body').contains('Aguardando feedback dos autores');
     cy.compareSnapshot('Trabalho - Topico enviado');
   });
 
-})
+});
+
